@@ -5,7 +5,7 @@ import { InMemoryCache } from 'apollo-cache-inmemory';
 import Layouts from './components/Layouts';
 
 const client = new ApolloClient({
-  uri: 'https://api-euwest.graphcms.com/v1/cjuibv7et3llg01cswnhrmphb/master',
+  uri: 'https://api-euwest.graphcms.com/v1/cjwtgspec05sx01etm19zopvr/master',
   cache: new InMemoryCache(),
 });
 

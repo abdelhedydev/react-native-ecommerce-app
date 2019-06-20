@@ -8,7 +8,6 @@ import style from './LoginStyle';
 
 const Login = ({ navigation }) => {
   function formSubmit({ email, password }) {
-    console.log('aaaa', [email, password]);
     if (email === 'admin@admin.tn' && password === 'admin') navigation.navigate('Products');
     else {
       Alert.alert(
@@ -62,6 +61,7 @@ const Login = ({ navigation }) => {
                 value={values.password}
                 onChangeText={handleChange('password')}
                 style={style.input}
+                secureTextEntry
               />
               <Text style={style.error}>
                 {errors.password && touched.password && errors.password}

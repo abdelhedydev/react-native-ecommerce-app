@@ -11,6 +11,10 @@ const HomeStyle = StyleSheet.create({
     fontSize: 24,
     color: 'white',
     marginBottom: 10,
+  },
+  buttons: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   }
 });
 export default HomeStyle;

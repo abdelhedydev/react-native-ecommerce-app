@@ -15,11 +15,21 @@ class Home extends React.Component {
     return (
       <View style={style.container}>
         <Text style={style.title}>Welcome To Awesome App</Text>
-        <View>
+        <View style={style.buttons}>
+          <Button
+            title="Products"
+            color="#b30047"
+            onPress={() => navigation.navigate('Products')}
+          />
           <Button
             title="Go To Login"
-            color="#b30047"
+            color="#007399"
             onPress={() => navigation.navigate('Login')}
+          />
+          <Button
+            title="Pinterest"
+            color="#d50c22"
+            onPress={() => navigation.navigate('Pinterest')}
           />
         </View>
       </View>

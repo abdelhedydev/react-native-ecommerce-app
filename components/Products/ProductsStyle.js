@@ -6,7 +6,6 @@ const Products = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 40,
   },
   wrapper: {
     marginBottom: 25

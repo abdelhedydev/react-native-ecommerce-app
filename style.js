@@ -1,4 +1,5 @@
 import { Dimensions } from 'react-native';
+import { isNumber } from 'lodash';
 
 export const dimensions = {
   fullHeight: Dimensions.get('window').height,
@@ -23,3 +24,9 @@ export const fonts = {
   md: 18,
   lg: 28,
 };
+
+const isPercent = val => (isNumber(val) && val >= 0 && val <= 100);
+
+export const widthPercentage = val => (isPercent(val) ? (val / 100) * dimensions.fullWidth : 0);
+
+export const heightPercentage = val => (isPercent(val) ? (val / 100) * dimensions.fullHeight : 0);
